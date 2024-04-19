@@ -12,17 +12,25 @@
             background-color: #f8f8f8;
         }
         header {
-            background-color: #0000ff;
-            color: #fff;
-            padding: 20px 0;
             text-align: center;
+            background-color: #ffffff; /* 画像の背景とは異なる色を設定 */
+            padding: 20px 0;
+        }
+        .header-image {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+        }
+        h1 {
+            color: #000000; /* 画像の背景とは対照的な色を設定 */
         }
         nav {
             text-align: center;
             margin-top: 20px;
         }
         nav a {
-            color: #fff;
+            color: #000000; /* ナビゲーションのテキストカラーを設定 */
             text-decoration: none;
             padding: 10px 20px;
             border-radius: 5px;
@@ -30,8 +38,7 @@
             transition: background-color 0.3s, color 0.3s;
         }
         nav a:hover {
-            background-color: #fff;
-            color: #333;
+            background-color: #f0f0f0; /* ナビゲーションのホバー時の背景色を設定 */
         }
         .container {
             max-width: 1200px;
@@ -55,7 +62,7 @@
 </head>
 <body>
     <header>
-        <img src="seishin.png" alt="旭情報サービス株式会社" width="730" height="289">
+        <img class="header-image" src="path/to/image.png" alt="旭情報サービス株式会社">
         <h1>旭情報サービス株式会社</h1>
     </header>
 
